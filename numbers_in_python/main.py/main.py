@@ -3,6 +3,12 @@
 # An integer is an whole number with no decimal places .For exapla  1 is an integer  but
 # 1.0 isn't ,The name for the integer data type is int ,which you can see with type()
 print(type(2))
+# we can aslo convert a string containing an integer to a nuber  using int()
+int("25")
+# >> 25 
+#Like integers, floats can be created from floating-point literals or by converting a string to a float with float():
+float("1.25")
+# >>1.25
 # For example :
 age =21 #integer
 PI=3.14159 #float
