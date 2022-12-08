@@ -24,3 +24,43 @@ print(float_division)
 integer_division=21//4
 print(integer_division)
 
+#Math Operators in Python 
+# Exponent ==== (**)  2**3=8
+a=3
+b=4
+x=a**b
+print(x)
+# Modules / reminder =====(%) 22%8=6
+a=10
+b=3
+x=a%b
+print(x)
+# Integer devision /floored quotiet ====(//) 12//5=2
+a=9
+b=2
+x=a//b
+print(x)
+#Devision ======(/) 20/5=4
+a=16
+b=8
+x=a/b
+print(x)
+#Multiplication======(*) 20*5=100
+a=16
+b=8
+x=a*b
+print(x)
+#Subtraction ======(-) 20-5=16
+a=16
+b=8
+x=a-b
+print(x)
+#Addition ======(+) 20+5=25
+a=16
+b=8
+x=a+b
+print(x)
+
+
+
+
