@@ -10,6 +10,28 @@ multiline =""" Hello world
 My name is Dilshod 
 """
 print(multiline)
+#The + Operator
+# <<<------------>>>
+a="Hello"
+b="Dilshod"
+c="How are you "
+greeting=a+b+c
+print(greeting)
+# The * Operator
+c='you '
+v='me'
+d='we'
+print(c*4)
+# The in Operator
+s='hello'
+b='hello world how are you '
+print('hello ' in b )
+print(s in b)
+# There is also a not in operator, which does the opposite:
+s='hello'
+b='hello world how are you '
+print('hello '  not in b )
+print(s not in b)
 # <<<------------>>>
 name= 'Jane'
 greeting='hello'+name
@@ -41,7 +63,7 @@ final_greeting="How are you ,{name}"
 dilshod_greeting=final_greeting.format(name="Dilshod")
 print(dilshod_greeting)
 # <<<------------>>>
-name="Dilshod"
+name=input("Enter your name :")
 final_greeting="How are you ,{name}"
 dilshod_greeting=final_greeting.format(name=name)
 print(dilshod_greeting)
@@ -60,6 +82,10 @@ print(f"You have lived for {age*12} months")
 age=int(input('Enter your age :'))
 months=age*12
 print(f"You have lived for {months} months")
+# Built-in String Functions
+# chr---->>> Converts an integer to charc
+
+
 
 
 
