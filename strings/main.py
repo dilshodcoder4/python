@@ -1,151 +1,151 @@
 #Very often in our programmes, we will be dealing with numbers but almost as often,if not more  we will want to deal with text
 #For example the user will be giving us some text  and we will be doing some processing on it  as well as we will be waiting some text out to the screen 
 #And that is where the next datatype comes in In python  we have got another type called strings that are used to contain text like characters
-# my_string='Hello world'
-# print(my_string)
-# #Hello world
+my_string='Hello world'
+print(my_string)
+#Hello world
 
-# # <<<------------>>>
-# string_with_quotes="Hello   it is me "
-# another_with_quotes='he said "you are good boy"  !'
-# multiline =""" Hello world
-# My name is Dilshod 
-# """
-# print(multiline)
-# # >>>   Hello world
-# # My name is Dilshod
+# <<<------------>>>
+string_with_quotes="Hello   it is me "
+another_with_quotes='he said "you are good boy"  !'
+multiline =""" Hello world
+My name is Dilshod 
+"""
+print(multiline)
+# >>>   Hello world
+# My name is Dilshod
 
-# #The + Operator
-# # <<<------------>>>
-# a="Hello"
-# b="Dilshod"
-# c="How are you "
-# greeting=a + b + c
-# print(greeting)
-# #>>>Hello Dilshod How are you 
-# # The * Operator
-# c='you '
-# v='me'
-# d='we'
-# print(c*4)
-# #>>>youyouyouyou
-# # The in Operator
-# s='hello'
-# b='hello world how are you '
-# print('hello ' in b )
-# print(s in b)
-# # >>>True
-# # >>>True
-# # There is also a not in operator, which does the opposite:
-# s='hello'
-# b='hello world how are you '
-# print('hello '  not in b )
-# print(s not in b)
-# #>>> False
-# #>>> False
+#The + Operator
+# <<<------------>>>
+a="Hello"
+b="Dilshod"
+c="How are you "
+greeting=a + b + c
+print(greeting)
+#>>>Hello Dilshod How are you 
+# The * Operator
+c='you '
+v='me'
+d='we'
+print(c*4)
+#>>>youyouyouyou
+# The in Operator
+s='hello'
+b='hello world how are you '
+print('hello ' in b )
+print(s in b)
+# >>>True
+# >>>True
+# There is also a not in operator, which does the opposite:
+s='hello'
+b='hello world how are you '
+print('hello '  not in b )
+print(s not in b)
+#>>> False
+#>>> False
 
-# # <<<------------>>>
-# name= 'Jane'
-# greeting='hello'+name
-# print(greeting)
-# #>>>hello Jane
+# <<<------------>>>
+name= 'Jane'
+greeting='hello'+name
+print(greeting)
+#>>>hello Jane
 
-# # <<<------------>>>
-# age="25"
-# print("you are "+age)
-# #>>>  you are 25
-# age_as_str=str(age)
-# print("You are "+ age_as_str)
-# #>>>  You are 25
+# <<<------------>>>
+age="25"
+print("you are "+age)
+#>>>  you are 25
+age_as_str=str(age)
+print("You are "+ age_as_str)
+#>>>  You are 25
 
-# # <<<------------>>>
-# age=25
-# print(f"You are {age}")
-# #>>>  You are 25
+# <<<------------>>>
+age=25
+print(f"You are {age}")
+#>>>  You are 25
 
-# # <<<------------>>>
-# name="Dilshod"
-# greeting=f"How are you {name}"
-# print(greeting)
-# #>>> How are you Dilshod
+# <<<------------>>>
+name="Dilshod"
+greeting=f"How are you {name}"
+print(greeting)
+#>>> How are you Dilshod
 
-# # <<<------------>>>
-# name="Dilshod"
-# final_greeting="How are you {}"
-# dilshod_greeting=final_greeting.format(name)
-# print(dilshod_greeting)
-# #>>> How are you Dilshod
+# <<<------------>>>
+name="Dilshod"
+final_greeting="How are you {}"
+dilshod_greeting=final_greeting.format(name)
+print(dilshod_greeting)
+#>>> How are you Dilshod
 
-# # <<<------------>>>
-# name="Javlon"
-# dilshod_greeting=final_greeting.format(name)
-# print(dilshod_greeting)
-# #>>> How are you Javlon
+# <<<------------>>>
+name="Javlon"
+dilshod_greeting=final_greeting.format(name)
+print(dilshod_greeting)
+#>>> How are you Javlon
 
-# # <<<------------>>>
-# name="Dilshod"
-# final_greeting="How are you {name}"
-# dilshod_greeting=final_greeting.format(name="Dilshod")
-# print(dilshod_greeting)
-# #>>> How are you Dilshod
+# <<<------------>>>
+name="Dilshod"
+final_greeting="How are you {name}"
+dilshod_greeting=final_greeting.format(name="Dilshod")
+print(dilshod_greeting)
+#>>> How are you Dilshod
 
-# # <<<------------>>>
-# name=input("Enter your name :")
-# final_greeting="How are you {name}"
-# dilshod_greeting=final_greeting.format(name=name)
-# print(dilshod_greeting)
-# #>>> Enter your name : Dilshod
-# #>>> How are you Dilshod
-# # Getting user input in Pyhton 
-# first_name="Tom"
-# friend_name=input("Enter your friend name : ")
-# print(f"Hello {first_name}.My friend name is {friend_name}")
-# #>>> Enter your  friend name : Javlon
-# #>>> Hello Tom .My friend name is Javlon
+# <<<------------>>>
+name=input("Enter your name :")
+final_greeting="How are you {name}"
+dilshod_greeting=final_greeting.format(name=name)
+print(dilshod_greeting)
+#>>> Enter your name : Dilshod
+#>>> How are you Dilshod
+# Getting user input in Pyhton 
+first_name="Tom"
+friend_name=input("Enter your friend name : ")
+print(f"Hello {first_name}.My friend name is {friend_name}")
+#>>> Enter your  friend name : Javlon
+#>>> Hello Tom .My friend name is Javlon
 
-# # <<<------------>>>
-# age=input('Enter your age :')
-# age_num=int(age)
-# print(f"You have lived for {age_num*12} months")
-# #>>>Enter your age :4
-# #>>>You have lived for 48 months
+# <<<------------>>>
+age=input('Enter your age :')
+age_num=int(age)
+print(f"You have lived for {age_num*12} months")
+#>>>Enter your age :4
+#>>>You have lived for 48 months
 
-# # <<<------------>>>
-# age=int(input('Enter your age :'))
-# print(f"You have lived for {age*12} months")
-# #>>>Enter your age :4
-# #>>>You have lived for 48 months
+# <<<------------>>>
+age=int(input('Enter your age :'))
+print(f"You have lived for {age*12} months")
+#>>>Enter your age :4
+#>>>You have lived for 48 months
 
-# # <<<------------>>>
-# age=int(input('Enter your age :'))
-# months=age*12
-# print(f"You have lived for {months} months")
-# #>>>Enter your age :4
-# #>>>You have lived for 48 months
-# # Built-in String Functions
+# <<<------------>>>
+age=int(input('Enter your age :'))
+months=age*12
+print(f"You have lived for {months} months")
+#>>>Enter your age :4
+#>>>You have lived for 48 months
+# Built-in String Functions
 
-# # <<<------------>>>
-# # chr()---->>> 	Converts an integer to a character
-# # chr() does the reverse of ord(). Given a numeric value n 
-# # chr(n) returns a string representing the character that corresponds to n:
-# print(chr(97))
-# #>>> 'a'
+# <<<------------>>>
+# chr()---->>> 	Converts an integer to a character
+# chr() does the reverse of ord(). Given a numeric value n 
+# chr(n) returns a string representing the character that corresponds to n:
+print(chr(97))
+#>>> 'a'
 
-# # <<<------------>>>
-# # ord()---->>> Returns an integer value for the given character.
-# print(ord("a"))
-# #>>> 97
+# <<<------------>>>
+# ord()---->>> Returns an integer value for the given character.
+print(ord("a"))
+#>>> 97
 
-# # <<<------------>>>
-# #len()---->> Returns the length of a string
-# greeting='i am Dilshodbek.I am 12 years old'
-# print(len(greeting))
-# #>>> 33
+# <<<------------>>>
+#len()---->> Returns the length of a string
+greeting='i am Dilshodbek.I am 12 years old'
+print(len(greeting))
+#>>> 33
 
-# # <<<------------>>>
-# # str()---->>> Returns a string representation of an object
-# print(str(66.6))
-# #>>>'66.6'
+# <<<------------>>>
+# str()---->>> Returns a string representation of an object
+print(str(66.6))
+#>>>'66.6'
 
 #String indexing 
 s='dilshod'
@@ -187,6 +187,63 @@ print(id(s))
 #>>>140399892276080
 print(s is t)
 #>>> True
+
+# <<<------------>>>
+#This is a common paradigm for reversing a string:
+greeting="Hello learner how are you"
+print(greeting[::-1])
+#>>> uoy era woh renrael olleH
+
+
+# <<<------------>>>
+#Interpolating Variables Into a String
+dilshod_apple=5
+omadbek_apple=6
+all_apples=dilshod_apple*omadbek_apple
+print('Dilshod has',dilshod_apple,'apples,','Omadbek has',omadbek_apple,'apples,  and they have',all_apples,'apples in total.')
+#>>> Dilshod has 5 apples, Omadbek has 6 apples,  and they have 30 apples in total.
+
+
+# <<<------------>>>
+#Recast using an f-string, the above example looks much cleaner:
+dilshod_apple=5
+omadbek_apple=6
+all_apples=dilshod_apple*omadbek_apple
+print(f'Dilshod has {dilshod_apple} apples,Omadbek has {omadbek_apple} apples,  and they have {all_apples} apples in total.')
+#>>> Dilshod has 5 apples,Omadbek has 6 apples,  and they have 30 apples in total.
+
+
+# <<<------------>>>
+# There is also a built-in string 
+name='dilshod'
+print(name.replace('d','b'))
+#>>> bilshob
+
+
+# <<<------------>>>
+# Case Conversion
+# Methods in this group perform case conversion on the target string.
+
+# <<<------------>>>
+# capitalize() 
+# capitalize() returns a copy of my_self with the first character converted to uppercase and all other characters converted to lowercase:
+my_self="hello my name is dilshod"
+print(my_self.capitalize())
+#>>> Hello my name is dilshod
+
+# <<<------------>>>
+# lower()
+# lower() returns a copy of my_self with all alphabetic characters converted to lowercase:
+my_self="Hello my name is Dilshod"
+print(my_self.lower())
+
+
+
+
+
+
+
+
 
 
 
