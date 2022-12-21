@@ -225,14 +225,14 @@ print(name.replace('d','b'))
 # Methods in this group perform case conversion on the target string.
 
 # <<<------------>>>
-# capitalize() 
+# capitalize() - Capitalizes the target string.
 # capitalize() returns a copy of my_self with the first character converted to uppercase and all other characters converted to lowercase:
 my_self="hello my name is dilshod"
 print(my_self.capitalize())
 #>>> Hello my name is dilshod
 
 # <<<------------>>>
-# lower()
+# lower() - Converts alphabetic characters to lowercase.
 # lower() returns a copy of my_self with all alphabetic characters converted to lowercase:
 my_self="Hello my name is Dilshod"
 print(my_self.lower())
@@ -241,7 +241,7 @@ print(my_self.lower())
 
 
 # <<<------------>>>
-# swapcase()
+# swapcase() - Swaps case of alphabetic characters.
 # swapcase() returns a copy of my_self with uppercase alphabetic characters converted to lowercase and vice versa:
 my_self="Hello my name is Dilshod"
 print(my_self.swapcase())
@@ -249,7 +249,7 @@ print(my_self.swapcase())
 
 
 # <<<------------>>>
-# title()
+# title() - Converts the target string to “title case.”
 # title()  returns a copy of my_self in which the first letter of each word is converted to uppercase and remaining letters are lowercase:
 my_self="Hello my name is Dilshod"
 print(my_self.title())
@@ -257,7 +257,7 @@ print(my_self.title())
  
 
 # <<<------------>>>
-# upper()
+# upper() - Converts alphabetic characters to uppercase.
 # upper()  returns a copy of my_self with all alphabetic characters converted to uppercase:
 my_self="Hello my name is Dilshod"
 print(my_self.upper())
@@ -268,7 +268,7 @@ print(my_self.upper())
 # These methods provide various means of searching the target string for a specified substring.
 
 # <<<------------>>>
-# count()
+# count() - Counts occurrences of a substring in the target string.
 # count()  returns the number of non-overlapping occurrences of substring <sub> in my_self :
 my_self="Hello my name is Dilshod"
 print(my_self.count('i'))
@@ -277,7 +277,7 @@ print(my_self.count('l'))
 #>>> 3
 
 # <<<------------>>>
-# endwith()
+# endwith() - Determines whether the target string ends with a given substring.
 # endwith()   returns True if my_self ends with the specified <suffix> and False otherwise:
 my_self="Hello my name is Dilshod"
 print(my_self.endswith('Dilshod'))
@@ -286,7 +286,7 @@ print(my_self.endswith('name'))
 #>>> False
 
 # <<<------------>>>
-# find()
+# find() - Searches the target string for a given substring.
 # find()  You can use .find() to see if a Python string contains a particular substring. my_self.find(<sub>) 
 # returns the lowest index in my_self where substring <sub> is found:
 my_self="Hello my name is Dilshod"
@@ -294,6 +294,93 @@ print(my_self.find('my'))
 #>>> 6 
 print(my_self.find('lo'))
 #>>> 3
+
+# <<<------------>>>
+my_self="Hello my name is Dilshod"
+# index() - Searches the target string for a given substring.
+# index() This method is identical to .find(), except that it raises an exception if <sub> is not found rather than returning -1:
+print(my_self.index('my'))
+#>>> 6
+
+# <<<------------>>>
+my_self="Hello my name is Dilshod"
+# rfind () - Searches the target string for a given substring starting at the end.
+# rfind () - my_self.rfind(<sub>) returns the highest index in my_self where substring <sub> is found:
+print(my_self.rfind('i'))
+#>>>18
+
+# <<<------------>>>
+my_self="Hello my name is Dilshod"
+# startwith() - Determines whether the target string starts with a given substring.
+# startwith() When you use the Python .startswith() method, my_self.startswith(<suffix>) returns True if my_self starts with the specified <suffix> and False otherwise:
+print(my_self.startswith('Hello'))
+#>>> True
+
+
+# Character Classification
+# Methods in this group classify a string based on the characters it contains.
+
+# <<<------------>>>
+thing='AGBFs123'
+# isalnum() - Determines whether the target string consists of alphanumeric characters.
+# isalnum() thing.isalnum() returns True if thing is nonempty and all its characters are alphanumeric (either a letter or a number), and False otherwise:
+print(thing.isalnum())
+#>>> True
+thing_2='Hdjsd123$%'
+print(thing_2.isalnum())
+#>>> False
+
+# <<<------------>>>
+thing='AGBFsdhakfb'
+# isalpha() -Determines whether the target string consists of alphabetic characters.
+# isalpha() thing.isalpha() returns True if thing is nonempty and all its characters are alphabetic, and False otherwise:
+print(thing.isalpha())
+#>>> True
+thing='dgdj123'
+print(thing.isalpha())
+#>>> False
+
+# <<<------------>>>
+# isdigit() -Determines whether the target string consists of digit characters.
+# isdigit() You can use the .isdigit() Python method to check if your string is made of only digits. 
+# thing.isdigit() returns True if thing is nonempty and all its characters are numeric digits, and False otherwise:
+thing='123'
+print(thing.isdigit())
+#>>> True
+thing='advf123'
+print(thing.isdigit())
+# >>> False
+
+
+# <<<------------>>>
+# isidentifier() - Determines whether the target string is a valid Python identifier.
+# thing.isidentifier() returns True if thing is a valid Python identifier according to the language definition, and False otherwise:
+thing='hello123'
+print(thing.isidentifier())
+#>>> True
+thing='123hello'
+print(thing.isidentifier())
+#>>> False
+
+
+# <<<------------>>>
+# islower() - Determines whether the target string’s alphabetic characters are lowercase.
+# islower() thing.islower() returns True if thing is nonempty and all the alphabetic characters it contains are lowercase, 
+# and False otherwise. Non-alphabetic characters are ignored:
+thing='hello34'
+print(thing.islower())
+#>>> True
+thing="Hello34"
+print(thing.islower())
+# >>> False
+
+# <<<------------>>>
+
+
+
+
+
+
 
 
 
