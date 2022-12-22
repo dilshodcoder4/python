@@ -375,9 +375,39 @@ print(thing.islower())
 # >>> False
 
 # <<<------------>>>
+thing='hello34'
+# isprintable() -Determines whether the target string consists entirely of printable characters.
+# isprintable() returns True if thing is empty or all the alphabetic characters it contains are printable. 
+# It returns False if thing contains at least one non-printable character. Non-alphabetic characters are ignored:
+print(thing.isprintable())
+#>>>True
+thing='a\tb'
+print('a\tb'.isprintable())
+#>>>False
 
 
+# <<<------------>>>
+thing=' \t \n '
+# isspace() -Determines whether the target string consists of whitespace characters.
+# isspace()  returns True if thing is nonempty and all characters are whitespace characters, and False otherwise.
+# The most commonly encountered whitespace characters are space ' ', tab '\t', and newline '\n':
+print(thing.isspace())
+#>>>True
+thing=' a g  '
+print(thing.isspace())
+#>>>False
 
+
+# <<<------------>>>
+my_self="Hello Dilshod How Are You "
+# istitle() -Determines whether the target string is title cased.
+# istitle() returns True if my_self is nonempty, the first alphabetic character of each word is uppercase, 
+# and all other alphabetic characters in each word are lowercase. It returns False otherwise:
+print(my_self.istitle())
+#>>>True
+my_self="hello Dilshod How are You "
+print(my_self.istitle())
+#>>>False
 
 
 
