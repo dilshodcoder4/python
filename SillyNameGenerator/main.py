@@ -16,9 +16,9 @@ while True:
     print("{}{}".format(firstname,lastName),file=sys.stderr)    
     print('\n\n')
 
-    try_again=input("""Please Try again :       
-                   Press  q to exist """)
+    try_again=input("\n\nTry again?\n\nPress  quit to exist: ")
     if try_again.lower() == 'q':
-        try_again=0
+        break
+    input("\nPress Enter to exit ")
 
 
