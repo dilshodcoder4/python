@@ -399,15 +399,64 @@ print(thing.isspace())
 
 
 # <<<------------>>>
-my_self="Hello Dilshod How Are You "
 # istitle() -Determines whether the target string is title cased.
 # istitle() returns True if my_self is nonempty, the first alphabetic character of each word is uppercase, 
 # and all other alphabetic characters in each word are lowercase. It returns False otherwise:
+my_self="Hello Dilshod How Are You "
 print(my_self.istitle())
 #>>>True
 my_self="hello Dilshod How are You "
 print(my_self.istitle())
 #>>>False
+
+
+
+# <<<------------>>>
+# isupper()- Determines whether the target string’s alphabetic characters are uppercase.
+# isupper() my_self.isupper() returns True if my_self is nonempty and all the alphabetic characters it contains are uppercase, and False otherwise. 
+# Non-alphabetic characters are ignored:
+my_self="HELLO DILSHOD HOW ARE YOU  "
+print(my_self.isupper())
+#>>>True
+my_self="Hello Dilshod How Are You "
+print(my_self.isupper())
+#>>>False
+
+# String Formatting
+# Methods in this group modify or enhance the format of a string.
+
+
+# <<<------------>>>
+# center()-Centers a string in a field.
+# center() s.center(<width>) returns a string consisting of s centered in a field of width <width>. By default, padding consists of the ASCII space character:
+s='hello'
+print(s.center(20))
+#>>>'     hello     '
+# If the optional <fill> argument is specified, it is used as the padding character:
+s='hello'
+print(s.center(20,'-'))
+#>>>-------hello--------
+
+
+
+# <<<------------>>>
+# expandtabs(tabsize=8)-Expands tabs in a string.
+# expandtabs()  s.expandtabs() replaces each tab character ('\t') with spaces. By default, spaces are filled in assuming a tab stop at every eighth column:
+s='a\tb\tc'
+print(s.expandtabs())
+#>>> a       b       c
+#tabsize is an optional keyword parameter specifying alternate tab stop columns:
+print(s.expandtabs(4))
+#>>> a   b   c
+
+
+
+
+
+
+
+
+
 
 
 
