@@ -450,6 +450,47 @@ print(s.expandtabs(4))
 #>>> a   b   c
 
 
+# <<<------------>>>
+# ljust -Left-justifies a string in field.
+# ljust s.ljust(<width>) returns a string consisting of s left-justified in a field of width <width>. By default, padding consists of the ASCII space character:
+s='work'
+print(s.ljust(20))
+#>>>work
+s='work'
+print(s.ljust(20,'*'))
+#work****************
+
+# <<<------------>>>
+# lstrip() -Trims leading characters from a string.
+# lstrip()  s.lstrip() returns a copy of s with any whitespace characters removed from the left end:
+s='   hello dilshod how are you   '
+print(s.lstrip())
+#>>>hello dilshod how are you
+
+
+# <<<------------>>>
+# replace()-Replaces occurrences of a substring within a string.
+# replace() In Python, to remove a character from a string, you can use the Python string 
+# .replace() method. s.replace(<old>, <new>) returns a copy of s with all occurrences of substring <old> replaced by <new>:
+s='hello dilshod how are you'
+print(s.replace('hello','hi'))
+#>>>hi dilshod how are you
+
+# <<<------------>>>
+# rjust()-Right-justifies a string in a field.
+# rjust()  s.rjust(<width>) returns a string consisting of s right-justified in a field of width <width>. 
+# By default, padding consists of the ASCII space character:
+s='hello dilshod how are you     '
+print(s.rjust(50, '-'))
+# --------------------hello dilshod how are you 
+
+
+# <<<------------>>>
+# strip()-Strips characters from the left and right ends of a string.
+# strip() As with .lstrip() and .rstrip(), the optional <chars> argument specifies the set of characters to be removed:
+s='hello dilshod how are  you '
+print(s.strip('hello you'))
+
 
 
 
