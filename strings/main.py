@@ -5,124 +5,124 @@
 # print(my_string)
 # #Hello world
 
-# # <<<------------>>>
-# string_with_quotes="Hello   it is me "
-# another_with_quotes='he said "you are good boy"  !'
-# multiline =""" Hello world
-# My name is Dilshod 
-# """
-# print(multiline)
-# # >>>   Hello world
-# # My name is Dilshod
+# <<<------------>>>
+string_with_quotes="Hello   it is me "
+another_with_quotes='he said "you are good boy"  !'
+multiline =""" Hello world
+My name is Dilshod 
+"""
+print(multiline)
+# >>>   Hello world
+# My name is Dilshod
 
-# #The + Operator
-# # <<<------------>>>
-# a="Hello"
-# b="Dilshod"
-# c="How are you "
-# greeting=a + b + c
-# print(greeting)
-# #>>>Hello Dilshod How are you 
-# # The * Operator
-# c='you '
-# v='me'
-# d='we'
-# print(c*4)
-# #>>>youyouyouyou
-# # The in Operator
-# s='hello'
-# b='hello world how are you '
-# print('hello ' in b )
-# print(s in b)
-# # >>>True
-# # >>>True
-# # There is also a not in operator, which does the opposite:
-# s='hello'
-# b='hello world how are you '
-# print('hello '  not in b )
-# print(s not in b)
-# #>>> False
-# #>>> False
+#The + Operator
+# <<<------------>>>
+a="Hello"
+b="Dilshod"
+c="How are you "
+greeting=a + b + c
+print(greeting)
+#>>>Hello Dilshod How are you 
+# The * Operator
+c='you '
+v='me'
+d='we'
+print(c*4)
+#>>>youyouyouyou
+# The in Operator
+s='hello'
+b='hello world how are you '
+print('hello ' in b )
+print(s in b)
+# >>>True
+# >>>True
+# There is also a not in operator, which does the opposite:
+s='hello'
+b='hello world how are you '
+print('hello '  not in b )
+print(s not in b)
+#>>> False
+#>>> False
 
-# # <<<------------>>>
-# name= 'Jane'
-# greeting='hello'+name
-# print(greeting)
-# #>>>hello Jane
+# <<<------------>>>
+name= 'Jane'
+greeting='hello'+name
+print(greeting)
+#>>>hello Jane
 
-# # <<<------------>>>
-# age="25"
-# print("you are "+age)
-# #>>>  you are 25
-# age_as_str=str(age)
-# print("You are "+ age_as_str)
-# #>>>  You are 25
+# <<<------------>>>
+age="25"
+print("you are "+age)
+#>>>  you are 25
+age_as_str=str(age)
+print("You are "+ age_as_str)
+#>>>  You are 25
 
-# # <<<------------>>>
-# age=25
-# print(f"You are {age}")
-# #>>>  You are 25
+# <<<------------>>>
+age=25
+print(f"You are {age}")
+#>>>  You are 25
 
-# # <<<------------>>>
-# name="Dilshod"
-# greeting=f"How are you {name}"
-# print(greeting)
-# #>>> How are you Dilshod
+# <<<------------>>>
+name="Dilshod"
+greeting=f"How are you {name}"
+print(greeting)
+#>>> How are you Dilshod
 
-# # <<<------------>>>
-# name="Dilshod"
-# final_greeting="How are you {}"
-# dilshod_greeting=final_greeting.format(name)
-# print(dilshod_greeting)
-# #>>> How are you Dilshod
+# <<<------------>>>
+name="Dilshod"
+final_greeting="How are you {}"
+dilshod_greeting=final_greeting.format(name)
+print(dilshod_greeting)
+#>>> How are you Dilshod
 
-# # <<<------------>>>
-# name="Javlon"
-# dilshod_greeting=final_greeting.format(name)
-# print(dilshod_greeting)
-# #>>> How are you Javlon
+# <<<------------>>>
+name="Javlon"
+dilshod_greeting=final_greeting.format(name)
+print(dilshod_greeting)
+#>>> How are you Javlon
 
-# # <<<------------>>>
-# name="Dilshod"
-# final_greeting="How are you {name}"
-# dilshod_greeting=final_greeting.format(name="Dilshod")
-# print(dilshod_greeting)
-# #>>> How are you Dilshod
+# <<<------------>>>
+name="Dilshod"
+final_greeting="How are you {name}"
+dilshod_greeting=final_greeting.format(name="Dilshod")
+print(dilshod_greeting)
+#>>> How are you Dilshod
 
-# # <<<------------>>>
-# name=input("Enter your name :")
-# final_greeting="How are you {name}"
-# dilshod_greeting=final_greeting.format(name=name)
-# print(dilshod_greeting)
-# #>>> Enter your name : Dilshod
-# #>>> How are you Dilshod
-# # Getting user input in Pyhton 
-# first_name="Tom"
-# friend_name=input("Enter your friend name : ")
-# print(f"Hello {first_name}.My friend name is {friend_name}")
-# #>>> Enter your  friend name : Javlon
-# #>>> Hello Tom .My friend name is Javlon
+# <<<------------>>>
+name=input("Enter your name :")
+final_greeting="How are you {name}"
+dilshod_greeting=final_greeting.format(name=name)
+print(dilshod_greeting)
+#>>> Enter your name : Dilshod
+#>>> How are you Dilshod
+# Getting user input in Pyhton 
+first_name="Tom"
+friend_name=input("Enter your friend name : ")
+print(f"Hello {first_name}.My friend name is {friend_name}")
+#>>> Enter your  friend name : Javlon
+#>>> Hello Tom .My friend name is Javlon
 
-# # <<<------------>>>
-# age=input('Enter your age :')
-# age_num=int(age)
-# print(f"You have lived for {age_num*12} months")
-# #>>>Enter your age :4
-# #>>>You have lived for 48 months
-
-# # <<<------------>>>
-# age=int(input('Enter your age :'))
-# print(f"You have lived for {age*12} months")
-# #>>>Enter your age :4
-# #>>>You have lived for 48 months
-
-# # <<<------------>>>
-# age=int(input('Enter your age :'))
-# months=age*12
-# print(f"You have lived for {months} months")
+# <<<------------>>>
+age=input('Enter your age :')
+age_num=int(age)
+print(f"You have lived for {age_num*12} months")
 #>>>Enter your age :4
 #>>>You have lived for 48 months
-# Built-in String Functions
+
+# <<<------------>>>
+age=int(input('Enter your age :'))
+print(f"You have lived for {age*12} months")
+#>>>Enter your age :4
+#>>>You have lived for 48 months
+
+# <<<------------>>>
+age=int(input('Enter your age :'))
+months=age*12
+print(f"You have lived for {months} months")
+>>>Enter your age :4
+>>>You have lived for 48 months
+Built-in String Functions
 
 # <<<------------>>>
 # chr()---->>> 	Converts an integer to a character
