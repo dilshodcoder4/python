@@ -490,15 +490,68 @@ print(s.rjust(50, '-'))
 # strip() As with .lstrip() and .rstrip(), the optional <chars> argument specifies the set of characters to be removed:
 s='hello dilshod how are  you '
 print(s.strip('hello you'))
+# dilshod how ar
 
 
+# <<<------------>>>
+# zfill()- Pads a string on the left with zeros.
+# zfill()- s.zfill(<width>) returns a copy of s left-padded with '0' characters to the specified <width>:
+s='45'
+print(s.zfill(6))
+#>>>000045
 
 
+# Converting Between Strings and Lists    
+
+# Methods in this group convert between a string and some composite data type by either pasting objects together to make a string, or by breaking a string up into pieces.
+
+# These methods operate on or return iterables, the general Python term for a sequential collection of objects. You will explore the inner workings of iterables in much more detail in the upcoming tutorial on definite iteration.
+
+# Many of these methods return either a list or a tuple. These are two similar composite data types that are prototypical examples of iterables in Python. They are covered in the next tutorial, so you’re about to learn about them soon! Until then, simply think of them as sequences of values. A list is enclosed in square brackets ([]), and a tuple is enclosed in parentheses (()).
+
+# With that introduction, let’s take a look at  this last group of string methods.
 
 
+# <<<------------>>>
+# join()-Concatenates strings from an iterable.
+# join()-s.join(<iterable>) returns the string that results from concatenating the objects in <iterable> separated by s.
+# Some sample code should help clarify. In the following example, the separator s is the string ', ', and <iterable> is a list of string values:
+friends=['Ohun','Saidakabr','Toshpulod']
+print(':'.join(friends))
+#>>>Ohun,Saidakabr,Toshpulod
+s='hello'
+print(list(s))
+#>>>['h', 'e', 'l', 'l', 'o']
 
 
+# <<<------------>>>
+# partition()-Divides a string based on a separator.
+# partition()-s.partition(<sep>) splits s at the first occurrence of string <sep>. The return value is a three-part tuple consisting of:
+# The portion of s preceding <sep>
+# <sep> itself
+# The portion of s following <sep>
+s='hello$my$name$is$Dilshod'
+print(s.partition('$'))
+#>>>('hello', '$', 'my$name$is$Dilshod')
 
+# <<<------------>>>
+# rsplit()-Splits a string into a list of substrings.
+# rsplit()-Without arguments, s.rsplit() splits s into substrings delimited by any sequence of whitespace and returns the substrings as a list:
+s='hello my name is dilshod'
+print(s.rsplit())
+#>>>['hello', 'my', 'name', 'is', 'dilshod']
+s='hello:my:name:is:dilshod'
+print(s.split(sep=':'))
+#>>>['hello', 'my', 'name', 'is', 'dilshod']
+
+
+# <<<------------>>>
+# split()-Splits a string into a list of substrings.
+# split()-s.split() behaves exactly like s.rsplit(), except that if <maxsplit> is specified, 
+# splits are counted from the left end of s rather than the right end:
+s='hello:my:name:is:dilshod'
+print(s.split(':',maxsplit=2))
+#>>>['hello', 'my', 'name:is:dilshod']
 
 
 
