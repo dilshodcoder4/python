@@ -94,9 +94,42 @@
 
 # 7. Write a Python program to find the first appearance of the substring 'not' and 'poor' from a given string, 
 # if 'not' follows the 'poor', replace the whole 'not'...'poor' substring with 'good'. Return the resulting string.
-string=input('Enter the string :')
-x='poor' and "not"
+# def not_poor(word):
+#   snot = word.find('not')
+#   spoor =word.find('poor')
+  
 
-print(string.replace(x,'good'))
+#   if spoor > snot and snot>0 and spoor>0:
+#     word = word.replace(word[snot:(spoor+4)], 'good')
+#     return word
+#   else:
+#     return word
+# print(not_poor('Mr Thomas is not that poor!'))
 
+#>>> Mr Thomas is good!
    
+
+# 8. Write a Python function that takes a list of words and return the longest word and the length of the longest one
+# def return_lengh_of_value(a):
+#     return len(a)
+
+# word=input('Enter the word :')
+# x=word.split()
+# b=len(x)
+# x.sort(key=return_lengh_of_value)
+# print(x)
+# print(x[b-1])
+
+# 9. Write a Python program to remove the nth index character from a nonempty string. 
+# word=input('Enter the word :')
+# n=int(input("Which index character that you want to change"))
+# print(word.replace(word[n],''))
+
+
+#10. Write a Python program to change a given string to a new string where the first and last chars have been exchanged.
+def change_sring(str1):
+      return str1[-1:] + str1[1:-1] + str1[:1]
+
+
+word=input('Enter the word : ')      
+change_sring(word)
