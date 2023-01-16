@@ -127,9 +127,40 @@
 
 
 #10. Write a Python program to change a given string to a new string where the first and last chars have been exchanged.
-def change_sring(str1):
-      return str1[-1:] + str1[1:-1] + str1[:1]
+# def change_string(str1):
+#       return str1[-1:] + str1[1:-1] + str1[:1]
+
+# word=input('Enter the word : ')      
+# print(word[:1])
 
 
-word=input('Enter the word : ')      
-change_sring(word)
+# 11. Write a Python program to remove characters that have odd index values in a given string.
+# def odd_element_change(word):
+#     excepted_word = ""
+#     for x in range(len(word)):
+#         if x %2 == 0:
+#             excepted_word=excepted_word + word[x]
+#     return excepted_word
+
+# WordToChange=input("Enter the word :")
+# print(odd_element_change(WordToChange))            
+
+
+# 12. Write a Python program to count the occurrences of each word in a given sentence
+# def count_words(str):
+#     counts=dict()
+#     words=str.split()
+
+
+#     for word in words:
+#         if word in counts:
+#             counts[word]+=1
+#         else:
+#             counts[word]=1
+#     return counts
+
+
+# wordi=input("Enter the word :")
+# print(count_words(wordi))
+
+
