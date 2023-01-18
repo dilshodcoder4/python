@@ -1,11 +1,11 @@
 #1
-# def greet():
-#     name=input("Enter your name :")
-#     print('Hello',name)
+def greet():
+    name=input("Enter your name :")
+    print('Hello',name)
 
-# greet()
+greet()
 
-# 2
+#2
 car={
     "make":"Ford",
     "model":"Fiesta",
@@ -133,6 +133,138 @@ def add(x,y=default_y):
 
 
 add(2)
+
+
+
+Functions with more than 1 input
+Positional argument 
+
+def greet_with(name,location):
+    print(f'hello{name}')
+    print(f"What is your city"{location})
+
+
+greet_with('Dilshod','Tasheknt')
+
+
+
+#Keyword argument 
+
+greet_with(name='Dilshod',location='Tasheknt ')
+
+#Lambda Functions 
+#12
+devide=lambda x,y:x/y
+
+print(devide(15,3))
+
+#13
+print((lambda x,y:x/y)(15,3))
+
+#14
+def average(sequence):
+    return sum(sequence)/len(sequence)
+
+
+students=[
+    {'name':'Rolf','grades':(50,25,30,60,90)},
+    {'name':'Sanjar','grades':(40,28,42,63,82)},
+    {'name':'Asal','grades':(25,41,78,55,75)},
+    {'name':'Gani','grades':(35,47,12,50,35)},
+]
+
+for student in students:
+    print(average(student["grades"]))
+
+#15
+average =lambda sequence: sum(sequence)/len(sequence)
+
+
+students=[
+    {'name':'Rolf','grades':(50,25,30,60,90)},
+    {'name':'Sanjar','grades':(40,28,42,63,82)},
+    {'name':'Asal','grades':(25,41,78,55,75)},
+    {'name':'Gani','grades':(35,47,12,50,35)},
+]
+
+for student in students:
+    print(average(student["grades"]))    
+
+
+# 16
+avg=lambda seq:sum(seq)/len(seq)
+total=lambda seq:sum(seq)
+top=lambda seq:max(seq)
+
+
+students=[
+    {'name':'Rolf','grades':(50,25,30,60,90)},
+    {'name':'Sanjar','grades':(40,28,42,63,82)},
+    {'name':'Asal','grades':(25,41,78,55,75)},
+    {'name':'Gani','grades':(35,47,12,50,35)},
+]
+
+for student in students:
+    name=student["name"]
+    grades=student["grades"]
+
+    print(f"Student :{name}")
+    operations=input("Choose 'average','total', or 'top' :")
+    
+
+    if operations =='average':
+        print(avg(grades))
+    elif operations == 'total':
+        print(avg(grades))
+    elif operations =='top':
+        print(max(grades))        
+
+# # or 
+ 
+avg=lambda seq:sum(seq)/len(seq)
+total=lambda seq:sum(seq)
+top=lambda seq:max(seq)
+
+operation={
+    'average':avg,
+    "total":total,
+    "top":top,
+}
+
+students=[
+    {'name':'Rolf','grades':(50,25,30,60,90)},
+    {'name':'Sanjar','grades':(40,28,42,63,82)},
+    {'name':'Asal','grades':(25,41,78,55,75)},
+    {'name':'Gani','grades':(35,47,12,50,35)},
+]
+
+for student in students:
+    name=student["name"]
+    grades=student["grades"]
+
+    print(f"Student :{name}")
+    operations=input("Choose 'average','total', or 'top' :")
+    
+    operation_function=operation[operations]
+    print(operation_function(grades))
+       
+
+
+
+# Paint Are Calculator
+import math
+
+def paint_calc(height,width,cover):
+    area=height*width
+    num_of_cans=math.ceil(area/cover)
+    print(f"You will need {num_of_cans} cans of paint")
+
+check_h=int(input("Height of the wall :"))
+check_w=int(input("Width of wall :"))
+coverage=5
+
+paint_calc(height=check_h,width=check_w,cover=coverage)
+
 
 
 
