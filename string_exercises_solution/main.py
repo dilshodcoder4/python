@@ -5,7 +5,7 @@
 # calculate_length_of_string('dilshod')    
 
 #Expected Result
-#>>> 7
+# #>>> 7
 
 # # 2. Write a Python program to count the number of characters (character frequency) in a string.
 # word=input("Enter word :")
@@ -39,9 +39,9 @@
 # swapcharr('hello')
 # swapcharr('h')
 
-#Expected Result
-# >>>hehe
-# >>>helo
+# #Expected Result
+# #>>>hehe
+# #>>>helo
 
 
 #4. Write a Python program to get a string from a given string 
@@ -71,9 +71,9 @@
 # print(f'{word1.replace(word1[:2],word2[:2])} {word2.replace(word2[:2],word1[:2])}')
 
 #Expected Result
-#>>> Enter first word:dello
-#>>> Enter second word:dilshod
-#>>> dillo delshod
+# #>>> Enter first word:dello
+# #>>> Enter second word:dilshod
+# #>>> dillo delshod
 
 # 6. Write a Python program to add 'ing' at the end of a given string (length should be at least 3). If the given string already ends with 'ing' then add 'ly' instead. 
 # If the string length of the given string is less than 3, leave it unchanged.
@@ -86,9 +86,9 @@
 #         print(word+"ing")    
 
 
-#>>> Expected Result
-#>>> Enter the word:helloing
-#>>> helloly
+# #>>> Expected Result
+# #>>> Enter the word:helloing
+# #>>> helloly
 
 
 
@@ -120,19 +120,29 @@
 # print(x)
 # print(x[b-1])
 
+# #>>>['is', 'boy', 'good', 'dilshod']
+# #>>>dilshod
+
+
+
 # 9. Write a Python program to remove the nth index character from a nonempty string. 
 # word=input('Enter the word :')
-# n=int(input("Which index character that you want to change"))
+# n=int(input("Which index character that you want to change :"))
 # print(word.replace(word[n],''))
 
+#>>> Enter the word :dilshod is bad guy
+#>>> Which index character that you want to change :2
+#>>> dishod is bad guy
 
 #10. Write a Python program to change a given string to a new string where the first and last chars have been exchanged.
 # def change_string(str1):
 #       return str1[-1:] + str1[1:-1] + str1[:1]
 
 # word=input('Enter the word : ')      
-# print(word[:1])
+# print(change_string(word))
 
+# #>>> Enter the word : hello
+# #>>> oellh
 
 # 11. Write a Python program to remove characters that have odd index values in a given string.
 # def odd_element_change(word):
@@ -143,7 +153,10 @@
 #     return excepted_word
 
 # WordToChange=input("Enter the word :")
-# print(odd_element_change(WordToChange))            
+# print(odd_element_change(WordToChange))      
+
+# #>>> Enter the word :dilshodbek
+# #>>> dlhde
 
 
 # 12. Write a Python program to count the occurrences of each word in a given sentence
@@ -164,3 +177,53 @@
 # print(count_words(wordi))
 
 
+# #>>> Enter the word :hello how are you 
+# #>>> {'hello': 1, 'how': 2, 'are': 1, 'you': 3}
+
+
+# 13. Write a Python script that takes input from the user and displays that input back in upper and lower cases.
+# This question seemed so easy for me then i decided to code of swapcase() 
+# def upper_lover(string):
+#     empty_string=""
+#     x=len(string)
+#     for i in range(x):
+#         if string[i] ==(string[i]).upper():
+#             empty_string=empty_string+(string[i]).lower()
+#         else:
+#             string[i] ==(string[i]).lower()
+#             empty_string=empty_string+(string[i]).upper()     
+#     print(empty_string)
+
+
+# upper_lover("hElo DilsHod")    
+ 
+# #>>> HeLO dILShOD
+
+
+#14. Write a Python program that accepts a comma-separated sequence of words as input and prints the distinct words in sorted form (alphanumerically)
+# itmes = input("Input  words :")
+# words = [word for word in itmes.split(",")]
+# print(",".join(sorted(list(set(words)))))
+
+#>>> Input  words :hello,is,dilshdo
+#>>> dilshdo,hello,is
+
+
+# 15. Write a Python function to create an HTML string with tags around the word(s)
+# print("""Choose Tag :
+# 1) <i> </i>
+# 2) <b> </b>""")
+# choise=int(input(""))
+# word=input("Imput word :")
+
+# if choise==1:
+#     print(f'<i>{word}</i>')
+# else:
+#     print(f'<b>{word}</b>')
+
+# #>>>   Choose Tag :
+#  #>>>1) <i> </i>
+#  #>>>2) <b> </b>
+#  #>>>1
+#  #>>>Imput word :hello how are you
+#  #>>><i>hello how are you</i>
