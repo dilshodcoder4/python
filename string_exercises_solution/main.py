@@ -227,3 +227,81 @@
 #  #>>>1
 #  #>>>Imput word :hello how are you
 #  #>>><i>hello how are you</i>
+
+
+# # 16. Write a Python function to insert a string in the middle of a string
+# print("""Choose Tag :
+# 1)[[]]
+# 2){{}}
+# 3)<<>> """)
+# choise=int(input("==> :"))
+# word=input("Imput word :")
+# if choise==1:
+#     print(f"[[{word}]]")
+# elif choise==2:
+#     print("{{"+f"{word}"+"}}")
+# else:
+#     print(f"<<{word}>>")
+
+# #>>>Choose Tag :
+# #>>> 1)[[]]
+# #>>>2){{}}
+# #>>>3)<<>> 
+# #>>>==> :3
+# #>>>Imput word :hello world
+# #>>> <<hello world>>
+
+
+# 17. Write a Python function to get a string made of 4 copies of the last two characters of a specified string (length must be at least 2)
+# word=input("Imput the word :")
+# if len(word)<2:
+#     print("Please try again")
+# else:    
+#     print(word[-2:]*4)
+
+# #>>> Imput the word :dilshod
+# #>>> odododod
+
+# # 18. Write a Python function to get a string made of the first three characters of a specified string. If the length of the string is less than 3, return the original string.
+# def take_three_elemnts(str):
+#     if len(str)<3:
+#         return str
+#     else:
+#         print(str[:3])    
+
+# take_three_elemnts("hello")
+# #>>>hel
+
+# # 19. Write a Python program to get the last part of a string before a specified character.
+# word=input("Imput word:")
+# word2=word.split()
+# word3=word2[:-1]
+# empty_string=""
+# for x in word3:
+#     empty_string=empty_string+x
+
+# print(empty_string)
+# #>>>Imput word:hewll kjfdgksd fdjgkg
+# #>>>hewllkjfdgksd
+
+
+# # 20. Write a Python function to reverse a string if its length is a multiple of 4.
+# def reverse_string(wrd):
+#     if len(wrd)%4==0:
+#         print(wrd[::-1])
+#     else:
+#         print(wrd)
+
+# word=input("Imput the word : ")
+# reverse_string(word)            
+
+# #>>>Imput the word : hellodiy
+# #>>>yidolleh
+
+# 21. Write a Python function to convert a given string to all uppercase if it contains at least 2 uppercase characters in the first 4 characters.
+word=input("Imput the string : ")
+word2=word[:4]
+if word2[0]==(word2[0]).upper() and word2[1]==(word2[1]).upper():
+    print(word.upper())
+elif word2[0]==(word2[0]).upper() and word2[2]==(word2[2]).upper():
+    print(word.upper())
