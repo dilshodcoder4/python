@@ -153,3 +153,83 @@
 #     if number % 2 == 0:
 #         total2+=number
 # print(total2)
+
+
+# # >>>
+# frineds=[('Asliddin', 30), ('Asal', 20), ('Omadbek', 15)]
+# for friend in frineds:
+#     print(friend)
+
+
+# # >>>
+# frineds=[('Asliddin', 30), ('Asal', 20), ('Omadbek', 15)]
+# for name, age in frineds:
+#     print(name,age)
+
+
+# Iterating over dictionaries 
+# # >>>
+# frineds=[('Asliddin', 30), ('Asal', 20), ('Omadbek', 15)]
+# for name in frineds:
+#     print(name)    
+    
+# # >>>    
+# frineds={'Asliddin': 30, 'Asal': 20, 'Omadbek': 15}
+# for age in frineds.values():
+#     print(age)   
+        
+# # >>>        
+# frineds={'Asliddin': 30, 'Asal': 20, 'Omadbek': 15}
+# for name, age in frineds.items():
+#     print(f"{name} is {age} years old")        
+
+# # >>>   
+# cars=['ok','ok','ok','ok','faulty','ok','ok']
+# for n in cars:
+#     if n=="faulty":
+#         print('Stopping the production line')
+#         break
+#     print(f"this car is {n}")
+#     print("Shipping new car to customer")
+    
+    
+# # >>>    
+# cars=['ok','ok','ok','ok','faulty','ok','ok']
+# for n in cars:
+#     if n=="faulty":
+#         print('Found Faulty cap skipping...')
+#         continue
+#     print(f"this car is {n}")
+#     print("Shipping new car to customer")    
+    
+    
+    
+    
+# cars=['ok','ok','ok','ok','ok','ok']
+# all_successful=True
+# for n in cars:
+#     if n=="faulty":
+#         print('Stopping the production line')
+#         all_successful=False
+#         break
+#     print(f"this car is {n}")
+#     print("Shipping new car to customer")  
+    
+    
+# else :
+#     print("All cars bulit succssefully. No faulty cars!")
+
+
+# for n in range(2,10):
+#     for x in range(2,n):
+#         if n%x==0:
+#             print(f"{n} equals {x}*{n//x}")
+#             break
+#     else:
+#         print(f"{n} is a prime number")    
+
+
+
+bevery fizz buzzda qoldim
+
+                   
