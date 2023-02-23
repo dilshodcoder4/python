@@ -154,34 +154,7 @@
 #         total2+=number
 # print(total2)
 
-
-# # >>>
-# frineds=[('Asliddin', 30), ('Asal', 20), ('Omadbek', 15)]
-# for friend in frineds:
-#     print(friend)
-
-
-# # >>>
-# frineds=[('Asliddin', 30), ('Asal', 20), ('Omadbek', 15)]
-# for name, age in frineds:
-#     print(name,age)
-
-
-# Iterating over dictionaries 
-# # >>>
-# frineds=[('Asliddin', 30), ('Asal', 20), ('Omadbek', 15)]
-# for name in frineds:
-#     print(name)    
-    
-# # >>>    
-# frineds={'Asliddin': 30, 'Asal': 20, 'Omadbek': 15}
-# for age in frineds.values():
-#     print(age)   
-        
-# # >>>        
-# frineds={'Asliddin': 30, 'Asal': 20, 'Omadbek': 15}
-# for name, age in frineds.items():
-#     print(f"{name} is {age} years old")        
+   
 
 # # >>>   
 # cars=['ok','ok','ok','ok','faulty','ok','ok']
@@ -228,17 +201,7 @@
 #     else:
 #         print(f"{n} is a prime number")    
 
-
-#The FizzBuzz
-for number in range(1,101):
-    if number%3==0 and number %5==0:
-        print("FizzBuzz")
-    elif number%3==0:
-        print("Fizz")
-    elif number%5==0:
-        print("Buzz")   
-    else:
-        print(number)         
+   
         
         
 
