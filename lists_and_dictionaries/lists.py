@@ -171,3 +171,84 @@
 # #>>>{'Masha': 3, 'Oliver': 7, 'Rose': 25, 'Steve': 11}
 
 #List methods
+# <<<------->>
+# append()-Adds an element at the end of the list
+friends=["Masha","Oliver","Rose","Steve"]
+friends.append("Danny")
+print(friends)
+#>>>['Masha', 'Oliver', 'Rose', 'Steve', 'Danny']
+
+# <<<------->>
+# clear()-Removes all the elemts from the list
+friends=["Masha","Oliver","Rose","Steve"]
+friends.clear()
+print(friends)
+#>>> []
+
+
+# <<<------->>
+# copy()-Returns a copy of the list
+friends=["Masha","Oliver","Rose","Steve"]
+friends2=friends.copy()
+print(friends2)
+#>>>['Masha', 'Oliver', 'Rose', 'Steve']
+
+# <<<------->>
+# count()-Returns the number of elements with the specified value
+friends=["Masha","Oliver","Rose","Steve"]
+print(friends.count('Masha'))
+#>>> 1
+
+
+# <<<------->>
+# extend()-Add the elements of a list (or any iterable), to the end of the current list
+friends=["Masha","Oliver","Rose","Steve"]
+friends3=['Sherbek','Tursinhon']
+friends.extend(friends3)
+print(friends)
+#>>>['Masha', 'Oliver', 'Rose', 'Steve', 'Sherbek', 'Tursinhon']
+
+# <<<------->>
+# index()-Returns the index of the first element with the specified value
+friends=["Masha","Oliver","Rose","Steve"]
+print(friends.index("Oliver"))
+#>>> 1
+
+# <<<------->>
+# insert()-Adds an element at the specified position 
+friends=["Masha","Oliver","Rose","Steve"]
+friends.insert(2,"Rose")
+print(friends)
+#>>>['Masha', 'Oliver', 'Rose', 'Rose', 'Steve']
+
+# <<<------->>
+# pop()-	Removes the element at the specified position
+friends=["Masha","Oliver","Rose","Steve"]
+friends.pop(2)
+print(friends)
+#>>>['Masha', 'Oliver', 'Steve']
+ 
+# <<<------->>>
+# remove()-	Removes the item with the specified value
+friends=["Masha","Oliver","Rose","Steve"]
+friends.remove('Masha')
+print(friends)
+#>>>['Oliver', 'Rose', 'Steve']
+ 
+# <<<------->>>
+# reverse()-Reverses the order of the list
+friends=["Masha","Oliver","Rose","Steve"]
+friends.reverse()
+print(friends)
+#>>>['Steve', 'Rose', 'Oliver', 'Masha']
+# 2 nd way of how to reverse
+friends=["Masha","Oliver","Rose","Steve"]
+print(friends[::-1])
+#>>>['Steve', 'Rose', 'Oliver', 'Masha']
+
+# <<<------->>>
+# sort()-Sorts the list
+friends=["Steve","Oliver","Rose","Masha"]
+friends.sort()
+print(friends)
+#>>>['Masha', 'Oliver', 'Rose', 'Steve']
