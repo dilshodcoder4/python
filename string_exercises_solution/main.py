@@ -299,9 +299,15 @@
 # #>>>yidolleh
 
 # 21. Write a Python function to convert a given string to all uppercase if it contains at least 2 uppercase characters in the first 4 characters.
-word=input("Imput the string : ")
-word2=word[:4]
-if word2[0]==(word2[0]).upper() and word2[1]==(word2[1]).upper():
-    print(word.upper())
-elif word2[0]==(word2[0]).upper() and word2[2]==(word2[2]).upper():
-    print(word.upper())
+words=input("Imput the string : ")
+empty_upper=0
+empty_lower=0
+x=len(words)
+for word in words[:4]:
+    if word==word.upper():
+        empty_upper+=1
+if empty_upper>=2:
+    print(words.upper())        
+    
+else:
+    print(words.lower())      
