@@ -79,3 +79,36 @@
 
 # # >>>There is 4 lower letter(s) in the word
 # # >>>There is 1 upper letter(s) in the word
+
+# # 8. Write a Python function that takes a list and returns a new list with distinct elements from the first list.
+# def remove_the_same_emlements(n):
+#     new_list=[]
+#     for x in n:
+#         if x not in  new_list:
+#             new_list.append(x)
+#         else:
+#             continue   
+#     print(new_list)     
+        
+        
+# remove_the_same_emlements([1,2,3,4,5,6,7,8,9,9,8,1])      
+# #>>>[1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# 9. Write a Python function that takes a number as a parameter and checks whether the number is prime or not.
+# def check_prime(number):
+#     prime_number=True
+
+
+#     for i in range(2,number):
+#         if number%i==0:
+#             prime_number=False
+#     if prime_number:
+#         print(f"{number} is prime number")
+#     else:
+#         print(f"{number} is not prime number")             
+
+# user=int(input("Imput number: "))
+# check_prime(user)
+
+
+            
