@@ -54,31 +54,69 @@
 #         else:
 #             break
 
-# 4. Write a Python program to construct the following pattern, using a nested for loop.
+# # 4. Write a Python program to construct the following pattern, using a nested for loop.
 
 
-def checker(n):
-    for i in range(n):
-        for j in range(i):
-            print ('* ', end="")
-        print('')        
+# def checker(n):
+#     for i in range(n):
+#         for j in range(i):
+#             print ('* ', end="")
+#         print('')        
 
-    for i in range(n,0,-1):
-        for j in range(i):
-            print('* ', end="")
-        print('')
+#     for i in range(n,0,-1):
+#         for j in range(i):
+#             print('* ', end="")
+#         print('')
         
-n=int(input("Input the number :")) 
-while True:        
-    checker(n)
-    print("Yes/No")
-    user_input=input(":")
-    if user_input=='Yes':
-        n=int(input("Input the number :"))
-        continue
-    else:
-        break   
+# n=int(input("Input the number :")) 
+# while True:        
+#     checker(n)
+#     print("Yes/No")
+#     user_input=input(":")
+#     if user_input=='Yes':
+#         n=int(input("Input the number :"))
+#         continue
+#     else:
+#         break   
             
-            
+# # 5. Write a Python program that accepts a word from the user and reverses it.         
+# word=input("Input the word to reverse :")   
+# for char in range(len(word) - 1, -1, -1):
+#   print(word[char], end="")
+# print("\n")          
         
+# # 6. Write a Python program to count the number of even and odd numbers in a series of numbers 
+# numbers_list=[1,2,3,4,5,6,4,8,9,10,11,12,13,14,15]   
+# even_numbers=[]
+# odd_numbers=[]
+# for x in numbers_list:
+#     if x%2==0:
+#         even_numbers.append(x)
+#     else:
+#         odd_numbers.append(x)
+        
+# print(f"Odd numbers are {odd_numbers}")
+# print(f"Even numbers are {even_numbers}")              
     
+    
+# # 7. Write a Python program that prints each item and its corresponding type from the following list.
+# datalist = [1452, 11.23, 1+2j, True, 'w3resource', (0, -1), [5, 12], {"class":'V', "section":'A'}]
+# for x in datalist:
+#     print(f"The type {x} is  {type(x)}")    
+# # >>>    
+# The type 1452 is  <class 'int'>
+# The type 11.23 is  <class 'float'>
+# The type (1+2j) is  <class 'complex'>
+# The type True is  <class 'bool'>
+# The type w3resource is  <class 'str'>
+# The type (0, -1) is  <class 'tuple'>
+# The type [5, 12] is  <class 'list'>
+# The type {'class': 'V', 'section': 'A'} is  <class 'dict'>    
+
+# 8. Write a Python program that prints all the numbers from 0 to 6 except 3 and 6.
+for x in range(0,6):
+    if x==3:
+        x=""
+        continue 
+    else:
+        print(x)   
