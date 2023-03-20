@@ -298,16 +298,36 @@
 # #>>>Imput the word : hellodiy
 # #>>>yidolleh
 
-# 21. Write a Python function to convert a given string to all uppercase if it contains at least 2 uppercase characters in the first 4 characters.
-words=input("Imput the string : ")
-empty_upper=0
-empty_lower=0
-x=len(words)
-for word in words[:4]:
-    if word==word.upper():
-        empty_upper+=1
-if empty_upper>=2:
-    print(words.upper())        
+# # 21. Write a Python function to convert a given string to all uppercase if it contains at least 2 uppercase characters in the first 4 characters.
+# words=input("Imput the string : ")
+# empty_upper=0
+# empty_lower=0
+# x=len(words)
+# for word in words[:4]:
+#     if word==word.upper():
+#         empty_upper+=1
+# if empty_upper>=2:
+#     print(words.upper())        
     
-else:
-    print(words.lower())      
+# else:
+#     print(words.lower())      
+
+# 22.Write a Python program to sort a string lexicographically.
+def sorter(n):
+    empty_list=[]
+    for x in n:
+        empty_list+=x
+        empty_list.sort()
+    print(empty_list)  
+    
+sorter("hello")    
+
+# 23. Write a Python program to remove a newline in Python. 
+str1='How are you \n'
+print(str1)
+print(str1.rstrip())
+
+# 24. Write a Python program to check whether a string starts with specified characters. 
+string = "dilshodbek"
+print(string.startswith("di"))
+#>>>True
