@@ -110,5 +110,41 @@
 # user=int(input("Imput number: "))
 # check_prime(user)
 
+# # 10. Write a Python program to print the even numbers from a given list. 
+# def even_sorter(n):
+#     even_numbers=[]
+#     for number in n:
+#         if number%2==0:
+#             even_numbers.append(number)      
+#         else:
+#             continue
+#     print(even_numbers)    
+# c=[1,2,3,4,5,6,7,8]        
+# even_sorter(c)              
+# #>>>[2, 4, 6, 8]
 
-            
+# # 11. Write a Python function to check whether a number is "Perfect" or not. 
+# def perfect_number(n):
+#     empty_list=[]
+#     for number in range(1,n):
+#         if n%number==0:
+#             empty_list.append(number)
+#         else:
+#             continue
+#     if sum(empty_list)==n:
+#         print(f"{n} is perfect number")
+#     else:
+#         print(f"{n} is not perfect number")            
+        
+# perfect_number(496)
+# #>>>496 is perfect number
+
+# 12. Write a Python function that checks whether a passed string is a palindrome or not.
+def palindrome(n):
+    if n==n[::-1]:
+        print("this is palindrome")
+    else:
+        print("this is not palindrome")    
+        
+palindrome("madam")        
+#>>>this is palindrome
