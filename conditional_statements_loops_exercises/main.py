@@ -113,10 +113,66 @@
 # The type [5, 12] is  <class 'list'>
 # The type {'class': 'V', 'section': 'A'} is  <class 'dict'>    
 
-# 8. Write a Python program that prints all the numbers from 0 to 6 except 3 and 6.
-for x in range(0,6):
-    if x==3:
-        x=""
-        continue 
-    else:
-        print(x)   
+# # 8. Write a Python program that prints all the numbers from 0 to 6 except 3 and 6.
+# for x in range(0,6):
+#     if x==3:
+#         x=""
+#         continue 
+#     else:
+#         print(x)   
+        
+# # 9. Write a Python program to get the Fibonacci series between 0 and 50.
+# x,y=0,1
+
+# while y<50:
+#     print(y)
+#     x,y=y,x+y        
+        
+# # >>>       
+# # 1
+# # 1
+# # 2
+# # 3
+# # 5
+# # 8
+# # 13
+# # 21
+# # 34
+
+# # 10. Write a Python program that iterates the integers from 1 to 50. 
+# # For multiples of three print "Fizz" instead of the number and for multiples of five print "Buzz".
+# # For numbers that are multiples of three and five, print "FizzBuzz".
+
+# number=int(input("Enter the number : "))
+# for x in range(number):
+    
+#     if x%3==0 and x%5==0:
+#         print("FizzBuzz")
+#     elif x%5==0:
+#         print("Buzz")    
+#     elif x%3==0:
+#         print("Fizz")
+#     else:
+#         print(x)
+    
+# # Enter the number : 20
+# # FizzBuzz
+# # 1
+# # 2
+# # Fizz
+# # 4
+# # Buzz
+# # Fizz
+# # 7
+# # 8
+# # Fizz
+# # Buzz
+# # 11
+# # Fizz
+# # 13
+# # 14
+# # FizzBuzz
+# # 16
+# # 17
+# # Fizz
+# # 19
