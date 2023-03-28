@@ -139,12 +139,44 @@
 # perfect_number(496)
 # #>>>496 is perfect number
 
-# 12. Write a Python function that checks whether a passed string is a palindrome or not.
-def palindrome(n):
-    if n==n[::-1]:
-        print("this is palindrome")
-    else:
-        print("this is not palindrome")    
+# # 12. Write a Python function that checks whether a passed string is a palindrome or not.
+# def palindrome(n):
+#     if n==n[::-1]:
+#         print("this is palindrome")
+#     else:
+#         print("this is not palindrome")    
         
-palindrome("madam")        
-#>>>this is palindrome
+# palindrome("madam")        
+# #>>>this is palindrome
+
+# # 13. Write a Python function that prints out the first n rows of Pascal's triangle
+# def pascal_triangle(n):
+#     triangle = [[1]]
+#     for i in range(1, n):
+#         row = [1]
+#         for j in range(1, i):
+#             row.append(triangle[i-1][j-1] + triangle[i-1][j])
+#         row.append(1)
+#         triangle.append(row)
+#     for row in triangle:
+#         print(row)
+
+# pascal_triangle(5)
+# #>>>
+# # [1]
+# # [1, 1]
+# # [1, 2, 1]
+# # [1, 3, 3, 1]
+# # [1, 4, 6, 4, 1]
+
+# 14. Write a Python function to check whether a string is a pangram or not
+def is_pangram(sentence):
+    
+    alphabet = set("abcdefghijklmnopqrstuvwxyz")
+    
+ 
+    letters = set(filter(lambda x: x.isalpha(), sentence.lower()))
+    
+    return letters == alphabet       
+print(is_pangram("Hello my name is Dilshod"))
+# >>>False
