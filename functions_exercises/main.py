@@ -169,14 +169,42 @@
 # # [1, 3, 3, 1]
 # # [1, 4, 6, 4, 1]
 
-# 14. Write a Python function to check whether a string is a pangram or not
-def is_pangram(sentence):
+# # 14. Write a Python function to check whether a string is a pangram or not
+# def is_pangram(sentence):
     
-    alphabet = set("abcdefghijklmnopqrstuvwxyz")
+#     alphabet = set("abcdefghijklmnopqrstuvwxyz")
     
  
-    letters = set(filter(lambda x: x.isalpha(), sentence.lower()))
+#     letters = set(filter(lambda x: x.isalpha(), sentence.lower()))
     
-    return letters == alphabet       
-print(is_pangram("Hello my name is Dilshod"))
-# >>>False
+#     return letters == alphabet       
+# print(is_pangram("Hello my name is Dilshod"))
+# # >>>False
+
+# 15. Write a Python program that accepts a hyphen-separated sequence of words as input and prints the words
+# in a hyphen-separated sequence after sorting them alphabetically.
+
+def SorterWithLetter(string):
+    x=string.split()
+    x.sort()
+    sorted_string=" "
+    for sorted in x:
+        sorted_string+=sorted
+        sorted_string+=" "
+    print(sorted_string)    
+       
+SorterWithLetter("hello my name is dilshod ")      
+# >>>dilshod hello is my name  
+
+
+
+# # 16. Write a Python function to create and print a list where the 
+# # values are the squares of numbers between 1 and 30 (both included)
+# def square_of_numbers(number):
+#     sqrd=[]
+#     for x in range(1,number):
+#         sqrd.append(x**2)      
+#     print(sqrd)    
+# square_of_numbers(10)
+
+# # >>>[1, 4, 9, 16, 25, 36, 49, 64, 81]
