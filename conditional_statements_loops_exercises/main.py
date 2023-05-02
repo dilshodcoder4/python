@@ -7,10 +7,10 @@
 #         list_for_numbers.append(str(x))
 # print(','.join(list_for_numbers))        
   
-# # >>>1505,1540,1575,1610,1645,1680,1715,1750,1785,
-# # 1820,1855,1890,1925,1960,1995,2030,2065,2100,2135,
-# # 2170,2205,2240,2275,2310,2345,2380,2415,
-# # 2450,2485,2520,2555,2590,2625,2660,2695   
+# >>>1505,1540,1575,1610,1645,1680,1715,1750,1785,
+# 1820,1855,1890,1925,1960,1995,2030,2065,2100,2135,
+# 2170,2205,2240,2275,2310,2345,2380,2415,
+# 2450,2485,2520,2555,2590,2625,2660,2695   
 
 # # 2. Write a Python program to convert temperatures to 
 # # and from Celsius and Fahrenheit
@@ -35,9 +35,9 @@
 # #>>> The temperature in Celsius is 16 degrees.
 
 
-# 3. Write a Python program to guess a number between 1 and 9.
-# Note : User is prompted to enter a guess. If the user guesses wrong then the prompt appears again until the guess is correct, 
-# on successful guess, user will get a "Well guessed!" message, and the program will exit.
+# # 3. Write a Python program to guess a number between 1 and 9.
+# # Note : User is prompted to enter a guess. If the user guesses wrong then the prompt appears again until the guess is correct, 
+# # on successful guess, user will get a "Well guessed!" message, and the program will exit.
 # import random
 # numbers=[1,2,3,4,5,6,7]
 # random_number=random.choice(numbers)
@@ -104,14 +104,14 @@
 # for x in datalist:
 #     print(f"The type {x} is  {type(x)}")    
 # # >>>    
-# The type 1452 is  <class 'int'>
-# The type 11.23 is  <class 'float'>
-# The type (1+2j) is  <class 'complex'>
-# The type True is  <class 'bool'>
-# The type w3resource is  <class 'str'>
-# The type (0, -1) is  <class 'tuple'>
-# The type [5, 12] is  <class 'list'>
-# The type {'class': 'V', 'section': 'A'} is  <class 'dict'>    
+# # The type 1452 is  <class 'int'>
+# # The type 11.23 is  <class 'float'>
+# # The type (1+2j) is  <class 'complex'>
+# # The type True is  <class 'bool'>
+# # The type w3resource is  <class 'str'>
+# # The type (0, -1) is  <class 'tuple'>
+# # The type [5, 12] is  <class 'list'>
+# # The type {'class': 'V', 'section': 'A'} is  <class 'dict'>    
 
 # # 8. Write a Python program that prints all the numbers from 0 to 6 except 3 and 6.
 # for x in range(0,6):
@@ -177,15 +177,48 @@
 # # Fizz
 # # 19
 
-# 11. Write a Python program that takes two digits m (row) and n (column) as input and generates a two-dimensional array. 
-# The element value in the i-th row and j-th column of the array should be i*j.
+# # 11. Write a Python program that takes two digits m (row) and n (column) as input and generates a two-dimensional array. 
+# # The element value in the i-th row and j-th column of the array should be i*j.
 
-row_num = int(input("Input number of rows: "))
-col_num = int(input("Input number of columns: "))
-multi_list = [[0 for col in range(col_num)] for row in range(row_num)]
+# row_num = int(input("Input number of rows: "))
+# col_num = int(input("Input number of columns: "))
+# multi_list = [[0 for col in range(col_num)] for row in range(row_num)]
 
-for row in range(row_num):
-    for col in range(col_num):
-        multi_list[row][col]= row*col
+# for row in range(row_num):
+#     for col in range(col_num):
+#         multi_list[row][col]= row*col
 
-print(multi_list)
+# print(multi_list)
+
+# #  12. Write a Python program that accepts a 
+# # sequence of lines (blank line to terminate) as input and prints the lines as output (all characters in lower case).
+# words=[]
+# while True:
+#     letter=input()
+#     if letter:
+#         words.append(letter.upper())
+#     else:
+#         break;
+    
+# for letter in words:
+#     print(letter)        
+# # >>>
+# # dilshdo
+# # qalesan
+
+# # DILSHDO
+# # QALESAN
+# 13. Write a Python program that accepts a sequence of comma 
+# separated 4 digit binary numbers as its input. 
+# The program will print the numbers that are divisible by 5 in a comma separated 
+binary=[]
+a=0
+while True:
+    number=input().split(",")
+    if not number%5:
+        binary+=number
+    else:
+        break;
+      
+for number in binary:
+    print(number)         
