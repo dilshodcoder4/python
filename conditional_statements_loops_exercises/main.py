@@ -212,13 +212,20 @@
 # separated 4 digit binary numbers as its input. 
 # The program will print the numbers that are divisible by 5 in a comma separated 
 binary=[]
+binary2=[]
 a=0
 while True:
-    number=input().split(",")
-    if not number%5:
-        binary+=number
+    print("IF you want to stop press hello")
+    number=int(input("enter the number: "))
+    if number:
+        binary.append(number)
     else:
-        break;
+        for son in binary:
+            if son%5==0:
+                binary2.append(son)
+    print(son)    
+       
+        
+    
       
-for number in binary:
-    print(number)         
+    
