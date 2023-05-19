@@ -213,9 +213,16 @@
 # The program will print the numbers that are divisible by 5 in a comma separated 
 binary=[]
 binary2=[]
-while True:
-    number=int()
+
+number=int(input("=>"))
+for x in range(0,number):
+    x=int(input(">>>> "))
+    binary.append(x)
         
+for c in binary:
+    if c%5==0:
+        binary2.append(c) 
     
-      
-    
+        
+print(binary2)
+       
