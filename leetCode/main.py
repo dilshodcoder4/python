@@ -8,12 +8,19 @@
 
 def sum_of_number(numbers,target):
     answer=[]
-    for c in range(len(numbers)):
-        x=target-numbers[c]
+    for c in numbers:
+        x=target-c
         if x in numbers:
-            answer=[numbers[c],x]
-    print(answer)  
+            answer1=numbers.index(x)
+            answer2=numbers.index(c)
+            v=(answer1,answer2)
+            
+    print(list(v))
 
 
 sum_of_number([1,3,4,6,4],5)
-# >>> [4,1] by Rahimov Dilshod
+# # >>> [4,1] by Rahimov Dilshod
+
+# list1=[1,2,3,4,5,6]
+# for x in list1:
+#     print(x)
