@@ -181,20 +181,20 @@
 # print(is_pangram("Hello my name is Dilshod"))
 # # >>>False
 
-# 15. Write a Python program that accepts a hyphen-separated sequence of words as input and prints the words
-# in a hyphen-separated sequence after sorting them alphabetically.
+# # 15. Write a Python program that accepts a hyphen-separated sequence of words as input and prints the words
+# # in a hyphen-separated sequence after sorting them alphabetically.
 
-def SorterWithLetter(string):
-    x=string.split()
-    x.sort()
-    sorted_string=" "
-    for sorted in x:
-        sorted_string+=sorted
-        sorted_string+=" "
-    print(sorted_string)    
+# def SorterWithLetter(string):
+#     x=string.split()
+#     x.sort()
+#     sorted_string=" "
+#     for sorted in x:
+#         sorted_string+=sorted
+#         sorted_string+=" "
+#     print(sorted_string)    
        
-SorterWithLetter("hello my name is dilshod ")      
-# >>>dilshod hello is my name  
+# SorterWithLetter("hello my name is dilshod ")      
+# # >>>dilshod hello is my name  
 
 
 
@@ -208,3 +208,50 @@ SorterWithLetter("hello my name is dilshod ")
 # square_of_numbers(10)
 
 # # >>>[1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+# # 17. Write a Python program to create a chain of 
+# # function decorators (bold, italic, underline etc.).
+# def make_bold(fn):
+#     def wrapped():
+#         return "<b>" + fn() + "</b>"
+#     return wrapped
+
+# def make_italic(fn):
+#     def wrapped():
+#         return "<i>" + fn() + "</i>"
+#     return wrapped
+
+# def make_underline(fn):
+#     def wrapped():
+#         return "<u>" + fn() + "</u>"
+#     return wrapped
+# @make_bold
+# @make_italic
+# @make_underline
+# def hello():
+#     return "hello dilshod"
+# print(hello()) ## returns "<b><i><u>hello dilshod</u></i></b>"  
+
+
+# # 18. Write a Python program to execute a string containing Python code.
+
+# greeting='print("My name is Dilshod")'
+# calculation="""
+# def sum_of_two_numbers(s,v):
+#     print(s+v)
+# sum_of_two_numbers(6,2)
+# """
+
+# exec(greeting)
+# exec(calculation)
+
+
+# # 19. Write a Python program to access a function inside a function.
+# def new(number):
+#     def add(num):
+#         nonlocal number
+#         number+=1
+#         return num+number
+#     return add
+# my_func=new(8)
+# print(my_func(8))
