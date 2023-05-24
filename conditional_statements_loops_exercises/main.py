@@ -208,21 +208,88 @@
 
 # # DILSHDO
 # # QALESAN
-# 13. Write a Python program that accepts a sequence of comma 
-# separated 4 digit binary numbers as its input. 
-# The program will print the numbers that are divisible by 5 in a comma separated 
-binary=[]
-binary2=[]
 
-number=int(input("=>"))
-for x in range(0,number):
-    x=int(input(">>>> "))
-    binary.append(x)
+
+# # 13. Write a Python program that accepts a sequence of comma 
+# # separated 4 digit binary numbers as its input. 
+# # The program will print the numbers that are divisible by 5 in a comma separated 
+# binary=[]
+# binary2=[]
+
+# number=int(input("How many elements do you wanna store: "))
+# for x in range(0,number):
+#     x=int(input("_"))
+#     binary.append(x)
         
-for c in binary:
-    if c%5==0:
-        binary2.append(c) 
+# for c in binary:
+#     if c%5==0:
+#         binary2.append(c) 
     
         
-print(binary2)
+# print(binary2)
        
+# # 14. Write a Python program that accepts a string and calculates the number of digits and letters.
+# numbers=['1','2','3','4','5','6','7','8','9','0']
+# element=input("Enter the string :")
+# digits=[]
+# letters=[]
+# for digit in element:
+#     if digit in numbers:
+#         digits.append(digit)       
+#     else:
+#         letters.append(digit)    
+# print(f"There are {len(digits)} digits in the string")
+# print(f"There are {len(letters)} letters in the string")
+
+# # 2-second way 
+
+# s = input("Input a string")
+# d=l=0
+# for c in s:
+#     if c.isdigit():
+#         d=d+1
+#     elif c.isalpha():
+#         l=l+1
+#     else:
+#         pass
+# print("Letters", l)
+# print("Digits", d)
+
+
+# # 15. Write a Python program to check the validity of passwords input by users.
+# import re
+# password=input("Enter the password :")
+# x=True
+# while x:
+#     if len(password)<6 or len(password)>12:
+#         break
+#     elif not re.search("[a,z]",password):
+#         break
+#     elif not re.search("[A,Z]",password):
+#         break
+#     elif not re.search("[0,9]",password):
+#         break
+#     elif not re.search("[$#@]",password):
+#         break
+#     elif not re.search("/s",password):
+#         break
+#     else:
+#         print("You have entered  correct password ")
+#         x=False
+#         break
+    
+# if x:
+#     print("Not valid password")    
+
+
+# 16. Write a Python program to find numbers between 100 and 400 (both included) where each digit of a number is an even number.
+# The numbers obtained should be printed in a comma-separated sequence.
+
+empty_list=[]
+for c in range(101,401):
+    c=str(c)
+    if (int(c[0])%2==0) and (int(c[1])%2==0) and (int(c[2])%2==0):
+        empty_list.append(c)
+       
+print("-".join(empty_list)) 
+        
